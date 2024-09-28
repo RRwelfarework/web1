@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #02011b;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    font-style: italic;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 6%;
+    width: 6%;
+}
+
+
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    background-image: url('/BACKGROUND.jpg');
+    background-size: cover;
+    height: 100%;
+    padding: 5%;
+}
+
+.features h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.features h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: small;
+}
+
+
+
+/* Centered Logo Section */
+.centered-logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white; /* Adjust as per your design */
+}
+
+.center-logo {
+    max-width: 300px; /* Medium size, adjust as needed */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+/* Footer with Small Logos */
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .small-logos img {
+    width: 50px;
+    margin: 10px;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Continent Links */
+.continents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the continent links */
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: rgb(155, 34, 34);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: rgb(55, 187, 231);
+}
+
+/* Copyright Information */
+.footer-copyright {
+    font-size: 14px;
+    color: #892f2f;
+}
+
+@media (max-width: 768px) {
+    .continents {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

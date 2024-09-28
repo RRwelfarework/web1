@@ -1,0 +1,511 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #02011b;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    font-style: italic;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 6%;
+    width: 6%;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('/BACKGROUND.jpg');
+    background-size: cover;
+    height: 118vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 12, 12);
+    text-align: center;
+    display: flex;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hero-content h2 {
+    color: #ffffff;
+    text-align: justify;
+}
+
+.hero-content h3 {
+    color: #ffffff;
+    text-align: justify;
+}
+
+.hero-content h4 {
+    color: #ffffff;
+    text-align: justify;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    background-image: url('/BACKGROUND.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.features h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: small;
+}
+
+
+/* Rectangle Section */
+.rectangle-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px;
+    background-color: #01000b;
+}
+
+.rectangle {
+    flex: 1;
+    height: 200px; /* Adjust height as needed */
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.image-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 3%;
+    
+}
+
+.overlay-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(16, 14, 14);
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 255, 255); /* Add semi-transparent background */
+    padding: 10px 20px;
+}
+
+
+
+/* Features Section2 */
+.features2 {
+    padding: 50px;
+    text-align: justify;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+}
+
+.features2 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.feature2-item {
+    padding: 25px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+/* Full-Screen Slideshow Section */
+.slideshow {
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Adjust according to the number of slides */
+}
+
+.slide {
+    flex: 0 0 100%;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 120vh;
+    position: relative;
+}
+
+
+
+
+
+
+/* Features Section3 */
+.features3 {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(11, 18, 70);
+    background-image: url('/Harnessing\ nasa\ data.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.features3 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: aqua;
+}
+
+.feature3-item {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Carousel Section */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.carousel-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Arrow Controls */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Automatic Slide */
+@keyframes autoSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-150px); }
+}
+
+
+
+
+/* Info Section with Heading, Text, and Buttons */
+.info-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.info-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.info-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+}
+
+.info-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+    background-color: darkblue;
+}
+
+
+
+
+/* Live Video Section */
+/*
+.live-video {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.live-video h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: none;
+    border-radius: 8px;
+}
+*/
+
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+}
+
+/* Contact Section */
+.contact {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #1a023c;
+    color: white;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Centered Logo Section */
+.centered-logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white; /* Adjust as per your design */
+}
+
+.center-logo {
+    max-width: 300px; /* Medium size, adjust as needed */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+/* Footer with Small Logos */
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .small-logos img {
+    width: 50px;
+    margin: 10px;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Continent Links */
+.continents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the continent links */
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: rgb(155, 34, 34);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: rgb(55, 187, 231);
+}
+
+/* Copyright Information */
+.footer-copyright {
+    font-size: 14px;
+    color: #892f2f;
+}
+
+@media (max-width: 768px) {
+    .continents {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
