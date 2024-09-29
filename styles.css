@@ -81,29 +81,6 @@ header nav ul li a {
     font-size: 18px;
 }
 
-/* Features Section */
-.features {
-    padding: 50px;
-    text-align: center;
-    background-color: white;
-    background-image: url('./BACKGROUND.jpg');
-    background-size: cover;
-    background-position: bottom;
-    height: 100vh;
-}
-
-.features h2 {
-    color: #ffffff;
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.feature-item {
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: justify;
-    font-size: small;
-}
 
 
 /* Rectangle Section */
@@ -152,6 +129,34 @@ header nav ul li a {
     background-color: rgb(255, 255, 255); /* Add semi-transparent background */
     padding: 10px 20px;
 }
+
+
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    background-image: url('./BACKGROUND.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.features h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: small;
+}
+
+
 
 
 
