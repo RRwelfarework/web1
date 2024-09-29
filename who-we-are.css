@@ -43,7 +43,7 @@ header nav ul li a {
     padding: 50px;
     text-align: center;
     background-color: white;
-    background-image: url('/BACKGROUND.jpg');
+    background-image: url('./BACKGROUND.jpg');
     background-size: cover;
     height: 100%;
     padding: 5%;
