@@ -39,7 +39,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('/BACKGROUND.jpg');
+    background-image: url('./BACKGROUND.jpg');
     background-size: cover;
     height: 118vh;
     display: flex;
@@ -86,7 +86,7 @@ header nav ul li a {
     padding: 50px;
     text-align: center;
     background-color: white;
-    background-image: url('/BACKGROUND.jpg');
+    background-image: url('./BACKGROUND.jpg');
     background-size: cover;
     background-position: bottom;
     height: 100vh;
@@ -210,7 +210,7 @@ header nav ul li a {
     padding: 50px;
     text-align: center;
     background-color: rgb(11, 18, 70);
-    background-image: url('/Harnessing\ nasa\ data.png');
+    background-image: url('./Harnessing\ nasa\ data.png');
     background-size: cover;
     background-position: bottom;
     height: 100vh;
