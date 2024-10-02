@@ -40,7 +40,7 @@ header nav ul li a {
 /* Hero Section */
 .hero {
     background-color: #020016;
-    background-image: url('/background.jpg');
+    background-image: url('./background.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
