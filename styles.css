@@ -39,9 +39,10 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./BACKGROUND.jpg');
+    background-color: #020016;
+    background-image: url('/background1.jpg');
     background-size: cover;
-    height: 118vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,13 +64,19 @@ header nav ul li a {
 }
 
 .hero-content h3 {
+    font-style: italic;
     color: #ffffff;
     text-align: justify;
 }
 
 .hero-content h4 {
+    font-style: italic;
     color: #ffffff;
     text-align: justify;
+}
+
+.hero-content p {
+    font-style: italic;
 }
 
 .cta-button {
@@ -80,7 +87,6 @@ header nav ul li a {
     border-radius: 5px;
     font-size: 18px;
 }
-
 
 
 /* Rectangle Section */
