@@ -5,20 +5,46 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: #000000;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.main-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+    width: 12%;
+}
+
+.main-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Styles */
+header nav {
+    flex-grow: 1;
+    text-align: right;
 }
 
 header nav ul {
     list-style-type: none;
-    text-align: right;
-    font-style: italic;
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
@@ -26,46 +52,130 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 13px;
+    font-style: italic;
 }
 
-.main-logo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 12%;
-    width: 12%;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-logo {
+        width: 20%;
+        margin-bottom: 15px;
+    }
+    
+    header nav ul {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 11px;
+    }
+
+    .main-logo {
+        width: 30%;
+    }
 }
 
 
 
 /* Features Section */
 .features {
-    padding: 50px;
+    padding: 5%; /* Use a percentage for better responsiveness */
     text-align: center;
     background-color: white;
-    background-image: url('./BACKGROUND.jpg');
+    background-image: url('./background1.jpg');
     background-size: cover;
-    height: 100%;
-    padding: 5%;
+    background-position: top; /* Ensure the wallpaper displays from the top */
+    color: #ffffff; /* Set a default text color */
 }
 
+/* Title styles */
 .features h2 {
-    color: #ffffff;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
+/* Subtitle styles */
 .features h3 {
-    color: #ffffff;
     font-size: 20px;
     margin-bottom: 30px;
 }
 
+/* Feature item styles */
 .feature-item {
-    color: #ffffff;
     margin-bottom: 20px;
     text-align: justify;
     font-size: small;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .features {
+        padding: 10%; /* Adjust padding for smaller screens */
+    }
+
+    .features h2 {
+        font-size: 32px; /* Smaller font size for h2 */
+    }
+
+    .features h3 {
+        font-size: 18px; /* Smaller font size for h3 */
+    }
+
+    .feature-item {
+        font-size: 14px; /* Increase font size for better readability on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features h2 {
+        font-size: 28px; /* Further reduce font size for very small screens */
+    }
+
+    .features h3 {
+        font-size: 16px; /* Further reduce font size for h3 */
+    }
+
+    .feature-item {
+        font-size: 12px; /* Smaller font size for feature items */
+    }
+}
+
+/* Optional: Flexbox layout for feature items */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the feature items */
+}
+
+.feature-item {
+    flex: 1 1 calc(33.333% - 20px); /* Each item takes up a third of the row with spacing */
+    margin: 10px; /* Add margin for spacing */
+}
+
+/* Responsive adjustments for feature items */
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        flex: 1 1 100%; /* Full width for mobile */
+    }
 }
 
 
