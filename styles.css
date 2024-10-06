@@ -96,7 +96,7 @@ header nav ul li a {
 /* Hero Section */
 .hero {
     background-color: #020016;
-    background-image: url('./background1.jpg');
+    background-image: url('./BACKGROUND.jpg');
     background-size: cover;
     background-position: top; /* Ensure the wallpaper displays from the top */
     height: 100vh;
@@ -377,19 +377,25 @@ header nav ul li a {
 .features {
     padding: 50px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(10, 0, 0);
     background-image: url('./BACKGROUND.jpg');
     background-size: cover;
-    background-position: bottom;
-    height: 75vh;
+    background-position: bottom; /* Ensures wallpaper displays from bottom */
+    height: 73vh;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
+/* Heading styles */
 .features h2 {
     color: #ffffff;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
+/* Feature item styles */
 .feature-item {
     color: #ffffff;
     margin-bottom: 20px;
@@ -397,29 +403,143 @@ header nav ul li a {
     font-size: small;
 }
 
+/* Paragraph styles */
+.features p {
+    color: #ffffff;
+    font-size: small; /* Consistent font size */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .features {
+        padding: 30px; /* Reduce padding for tablets */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .features h2 {
+        font-size: 32px; /* Smaller font size for h2 */
+    }
+
+    .feature-item {
+        font-size: 14px; /* Adjust font size for feature items */
+    }
+
+    .features p {
+        font-size: 14px; /* Adjust font size for paragraphs */
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        padding: 20px; /* Further reduce padding for mobile */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .features h2 {
+        font-size: 24px; /* Smaller font size for h2 */
+    }
+
+    .feature-item {
+        font-size: 12px; /* Adjust font size for feature items */
+    }
+
+    .features p {
+        font-size: 12px; /* Adjust font size for paragraphs */
+    }
+}
 
 
 
 
-/* Features Section2 */
+
+
+/* Features Section 2 */
 .features2 {
-    padding: 50px;
+    padding: 30px; /* Reduced padding for a more compact layout */
     text-align: justify;
     background-color: rgb(247, 247, 247);
     display: flex;
+    flex-direction: column; /* Stack content vertically */
+    gap: 20px; /* Add some space between elements */
 }
 
+/* Heading styles */
 .features2 h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 24px; /* Smaller, compact font size */
+    margin-bottom: 20px;
     text-align: justify;
+    font-weight: bold;
+    color: #333; /* Softer color for readability */
 }
 
-.feature2-item {
-    padding: 25px;
-    margin-bottom: 20px;
-    font-size: 12px;
+/* Subheading styles */
+.features2 h3 {
+    font-size: 18px; /* Compact subheading size */
     text-align: justify;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Feature item styles */
+.feature2-item {
+    padding: 15px; /* Reduced padding for compactness */
+    margin-bottom: 10px;
+    font-size: 12px; /* Small and interesting font size */
+    line-height: 1.5; /* Better readability */
+    text-align: justify;
+    background-color: #fff; /* Background color for distinction */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+/* Paragraph styles */
+.features2 p {
+    color: #000000;
+    font-size: 0.9rem; /* Small, compact font size */
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.4; /* Compact line height for tight spacing */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .features2 {
+        padding: 20px; /* Further reduce padding for smaller screens */
+    }
+
+    .features2 h2 {
+        font-size: 20px; /* Smaller font size for tablets */
+    }
+
+    .features2 h3 {
+        font-size: 16px; /* Smaller subheading size */
+    }
+
+    .feature2-item {
+        font-size: 10px; /* Smaller text for compactness on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .features2 {
+        padding: 15px; /* Minimum padding for mobile */
+    }
+
+    .features2 h2 {
+        font-size: 18px; /* Further reduce font size for mobile */
+    }
+
+    .features2 h3 {
+        font-size: 14px;
+    }
+
+    .feature2-item {
+        font-size: 9px; /* Compact font size for mobile */
+        padding: 8px;
+    }
 }
 
 
