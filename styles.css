@@ -176,20 +176,6 @@ header nav ul li a {
     line-height: 1.5;
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column; /* Stack the photo and text vertically on small screens */
-    }
-
-    .text-container h2 {
-        font-size: 20px;
-    }
-
-    .text-container p {
-        font-size: 14px;
-    }
-}
 
 
 .product-section {
