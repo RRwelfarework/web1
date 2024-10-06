@@ -137,6 +137,127 @@ header nav ul li a {
 }
 
 
+/* Photo and Text Section */
+.photo-text-section {
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Photo Styles */
+.photo-container img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 8px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Text Content Styles */
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack the photo and text vertically on small screens */
+    }
+
+    .text-container h2 {
+        font-size: 20px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+}
+
+
+.product-section {
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.969);
+    padding: 5%;
+}
+
+.product-container {
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.product {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffffec;
+    border: 1px solid #d1d1d1b9;
+    padding: 10px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.262);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.product-section h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.product-section p {
+    color: #010101;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: small;
+}
+
+
+
+
+
 
 /* Features Section */
 .features {
