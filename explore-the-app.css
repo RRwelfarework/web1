@@ -93,7 +93,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./BACKGROUND.jpg');
+    background-image: url('./background1.jpg');
     background-size: cover;
     background-position: top; /* Ensure the wallpaper displays from the top */
     height: 80vh;
@@ -188,6 +188,72 @@ header nav ul li a {
     .hero-content p {
         font-size: 12px; /* Smaller font size for paragraph */
     }
+}
+
+
+
+
+
+.product-section {
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.969);
+    padding: 5%;
+}
+
+.product-container {
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.product {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffffec;
+    border: 1px solid #d1d1d1b9;
+    padding: 10px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.262);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+p {
+    color: #010101;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: small;
 }
 
 
