@@ -93,7 +93,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./background1.jpg');
+    background-image: url('./BACKGROUND.jpg');
     background-size: cover;
     background-position: top; /* Ensure the wallpaper displays from the top */
     height: 80vh;
