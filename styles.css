@@ -240,6 +240,7 @@ header nav ul li a {
     background-color: #ffffff;
     border: 2px solid white; /* White border */
     box-sizing: border-box; /* Include border in dimensions */
+    box-shadow: 3px 2px 2px 2px rgb(207, 186, 1);
 }
 
 /* Image container */
