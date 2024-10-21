@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('./punta-arenas.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-section {
+    padding: 40px 20px;
+    background-color: #000000;
+    color: rgb(255, 225, 94);
+}
+
+.info-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.info-text {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+/*
+.map-section {
+    padding: 35px 20px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+*/
+.data-section {
+    padding: 50px;
+    background-color: #020100;
+    color: rgb(255, 255, 255);
+    font-size: small; /* Consistent font size */
+    text-align: justify;
+    align-items: center;
+}
+
+.data-section h2{
+    color: rgb(94, 244, 255);
+    text-align: justify;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.data-section h3{
+    color: rgb(94, 244, 255);
+    text-align: justify;
+    padding: 15px;
+    align-items: center;
+    
+}
+
+.data-section h4{
+    color: rgb(255, 225, 94);
+    text-align: justify;
+    align-items: center;
+    
+}
+
+.data-section a{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    align-items: center;
+}
+
+
+/* Contact Section */
+.contact {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #1a023c;
+    color: white;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Centered Logo Section */
+.centered-logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white; /* Adjust as per your design */
+}
+
+.center-logo {
+    max-width: 300px; /* Medium size, adjust as needed */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+/* Footer with Small Logos */
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .small-logos img {
+    width: 50px;
+    margin: 10px;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Continent Links */
+.continents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the continent links */
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: rgb(155, 34, 34);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: rgb(55, 187, 231);
+}
+
+/* Copyright Information */
+.footer-copyright {
+    font-size: 14px;
+    color: #892f2f;
+}
+
+@media (max-width: 768px) {
+    .continents {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
