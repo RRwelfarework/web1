@@ -904,6 +904,138 @@ iframe {
 */
 
 
+
+/* Tree Button Section */
+.tree-section {
+    position: relative;
+    height: auto;
+    background: linear-gradient(to bottom, #0093E9, #80D0C7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tree-button {
+    margin-top: 20px;
+    background-color: #228B22; /* Tree-like color */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 5px solid #32CD32; /* Highlight */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.tree-text {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* Climate Meters Surrounding Tree Button */
+.meter-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.climate-meter {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 3px 3px 3px rgba(171, 255, 97, 0.863);
+}
+
+.meter-title {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.meter-value {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #228B22;
+}
+
+/* Location Search Section */
+.location-section {
+    
+    text-align: center;
+    background: linear-gradient(to bottom, #0093E9, #0093E9);
+}
+.location-section h2 {
+    padding: 5px;
+    text-align: center;
+}
+
+#location-input {
+    padding: 10px;
+    width: 250px;
+    font-size: 1em;
+    border: 2px solid #32CD32;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#search-btn:hover {
+    background-color: #32CD32;
+}
+@media (max-width: 600px) {
+    .meter-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tree-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .climate-meter {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
 /* About Section */
 /* General section styling */
 .about-us {
