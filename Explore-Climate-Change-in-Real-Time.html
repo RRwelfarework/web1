@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change - NE-AR Naturalists Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Explore-Climate-Change-in-Real-Time-styles.css">
+
+    <!-- A-Frame and AR.js Libraries -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/aframe/build/AR.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">NE-AR</div>
+        <div class="navbar-links">
+            <a href="./index.html">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#features">Features</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Explore Climate Change in Real-Time</h1>
+        <p>Track climate events, view historical data, and explore the world with AR.</p>
+        <button class="btn" id="start-exploring" onclick="initializeAR()">Start Exploring</button>
+    </header>
+
+    <!-- Feature Section -->
+    <section class="feature-section" id="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Visualizing Greenhouse Gases (GHGs)</h3>
+                <button onclick="startGHGVisualization()">Start GHG AR Visualization</button>
+            </div>
+            <div class="feature-card">
+                <h3>Fossil Fuel and Emissions Impact</h3>
+                <button onclick="simulateFossilFuelEmissions()">Simulate Fossil Fuel Emissions</button>
+            </div>
+            <div class="feature-card">
+                <h3>Ecosystem Changes and Methane Emissions</h3>
+                <button onclick="exploreMethaneEmissions()">Explore Methane Emissions</button>
+            </div>
+            <div class="feature-card">
+                <h3>Global Carbon Budget</h3>
+                <button onclick="viewCarbonBudget()">View Carbon Budget</button>
+            </div>
+            <div class="feature-card">
+                <h3>GHG Sources and Sinks</h3>
+                <button onclick="exploreGHGSourcesSinks()">Explore GHG Sources & Sinks</button>
+            </div>
+            <div class="feature-card">
+                <h3>Lateral Fluxes</h3>
+                <button onclick="viewCarbonMovement()">View Carbon Movement</button>
+            </div>
+            <div class="feature-card">
+                <h3>Interactive AR Simulations</h3>
+                <button onclick="exploreClimateScenarios()">Explore Climate Scenarios</button>
+            </div>
+            <div class="feature-card">
+                <h3>Solution Simulations</h3>
+                <button onclick="viewClimateSolutions()">View Climate Solutions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AR Scene -->
+    <div id="ar-scene" style="display: none;">
+        <a-scene embedded arjs>
+            <a-marker id="marker" preset="hiro">
+                <a-entity id="ghgModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-box color="blue"></a-box> <!-- Placeholder for GHG visualization -->
+                </a-entity>
+                <a-entity id="fossilFuelModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-cylinder color="grey"></a-cylinder> <!-- Placeholder for fossil fuel emissions -->
+                </a-entity>
+                <a-entity id="methaneModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-sphere color="green"></a-sphere> <!-- Placeholder for methane emissions -->
+                </a-entity>
+                <a-entity id="carbonBudgetModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-plane color="yellow"></a-plane> <!-- Placeholder for carbon budget -->
+                </a-entity>
+                <a-entity id="ghgSourcesSinksModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-torus color="purple"></a-torus> <!-- Placeholder for GHG sources & sinks -->
+                </a-entity>
+                <a-entity id="lateralFluxesModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-cylinder color="orange"></a-cylinder> <!-- Placeholder for carbon movement -->
+                </a-entity>
+                <a-entity id="climateScenariosModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-box color="red"></a-box> <!-- Placeholder for climate scenarios -->
+                </a-entity>
+                <a-entity id="climateSolutionsModel" position='0 0 0' scale="0.1 0.1 0.1" visible="false">
+                    <a-sphere color="cyan"></a-sphere> <!-- Placeholder for climate solutions -->
+                </a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NE-AR. All rights reserved.</p>
+    </footer>
+
+    <script src="./Explore-Climate-Change-in-Real-Time-script.js"></script>
+</body>
+
+</html>
