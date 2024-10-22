@@ -74,3 +74,67 @@ window.addEventListener('resize', () => {
     const newSlideWidth = items[0].offsetWidth + 20;
     carouselContent.style.transform = `translateX(${-currentSlide * newSlideWidth}px)`;
 });
+
+
+
+
+
+
+// Sample data for demonstration, in real scenario you will fetch this data from an API
+const sampleClimateData = {
+    'New York': {
+        temperature: '12°C',
+        co2: '400 ppm',
+        seaLevel: '3.2 mm',
+        methane: '1900 ppb'
+    },
+    'Los Angeles': {
+        temperature: '18°C',
+        co2: '430 ppm',
+        seaLevel: '3.8 mm',
+        methane: '1700 ppb'
+    },
+    'Mangalore': {
+        temperature: '25°C',
+        co2: '420 ppm',
+        seaLevel: '3.5 mm',
+        methane: '1800 ppb'
+    }
+};
+
+// Function to search for location and update meters
+document.getElementById('search-btn').addEventListener('click', function() {
+    const location = document.getElementById('location-input').value;
+
+    if (sampleClimateData[location]) {
+        // Update climate meters based on location data
+        document.getElementById('temperature-meter').querySelector('.meter-value').textContent = sampleClimateData[location].temperature;
+        document.getElementById('co2-meter').querySelector('.meter-value').textContent = sampleClimateData[location].co2;
+        document.getElementById('sea-level-meter').querySelector('.meter-value').textContent = sampleClimateData[location].seaLevel;
+        document.getElementById('methane-meter').querySelector('.meter-value').textContent = sampleClimateData[location].methane;
+    } else {
+        alert('Searching....');
+    }
+});
+
+
+async function fetchClimateData(location) {
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=YOUR_API_KEY`);
+        const data = await response.json();
+        
+        //  data to update the meters
+        document.getElementById('temperature-meter').querySelector('.meter-value').textContent = `${Math.round(data.main.temp - 273.15)}°C`;
+        document.getElementById('co2-meter').querySelector('.meter-value').textContent = '415 ppm'; // Placeholder, API does not provide CO2 data
+        document.getElementById('sea-level-meter').querySelector('.meter-value').textContent = '3.2 mm'; // Placeholder
+        document.getElementById('methane-meter').querySelector('.meter-value').textContent = '1800 ppb'; // Placeholder
+    } catch (error) {
+        console.error('Error fetching climate data:', error);
+        alert('Please try again.');
+    }
+}
+
+document.getElementById('search-btn').addEventListener('click', function() {
+    const location = document.getElementById('location-input').value;
+    fetchClimateData(location);
+});
